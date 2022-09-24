@@ -208,6 +208,16 @@ body {
   display: none;
 }
 
+.hamburger {
+  position: absolute;
+  right: 100px;
+  padding-top: 20px;
+}
+
+#button_image {
+  width: 30px;
+}
+
 /* don't edit this */
 .jest-lite-report__status--pass {
   background: var(--color-pass);
