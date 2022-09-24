@@ -39,7 +39,7 @@ function getNumberOrString(value) {
 }
 
 document.getElementById('insert').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
+  let element_list = document.getElementById('list2');
   let new_li = document.createElement('li');
   new_li.innerText = getNumberOrString(document.getElementById('input').value);
 
