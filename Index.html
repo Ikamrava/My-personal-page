@@ -1,99 +1,124 @@
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
-const image_link = "https://cdn-icons-png.flaticon.com/512/1828/1828846.png";
-const close_image =
-  "https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-round-icon.png";
-document
-  .querySelector(".small_pic")
-  .addEventListener("click", function (event) {
-    document.querySelector(".modal").classList.remove("hidden");
-    document.querySelector(".overlay").classList.remove("hidden");
-  });
-overlay.addEventListener("click", function () {
-  document.querySelector(".modal").classList.add("hidden");
-  document.querySelector(".overlay").classList.add("hidden");
-});
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My first home page</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </head>
 
-var dns, link, item;
-dns = ["Code your future", "Google", "Git hub"];
-link = [
-  "https://codeyourfuture.io/",
-  "https://www.google.com/",
-  "https://github.com/",
-];
-dns.forEach((item) => {
-  let element_list = document.getElementById("list");
-  let new_li = document.createElement("li");
-  let new_a = document.createElement("a");
-  new_a.innerText = item;
-  new_a.setAttribute("href", link.shift());
+      <body>
+        <header class="c-site-header"></header>
 
-  new_li.appendChild(new_a);
+        <div class="container">
+          <div class="c1">
+            <img
+              class="small_pic"
+              src="https://drive.google.com/uc?export=view&id=12035OP-LBfooY9EpLO7oVcJL6ty6XU59"
+              alt="My profile photo"
+            />
+          </div>
+          <div class="c2">Welcome to my pag</div>
+        </div>
 
-  element_list.appendChild(new_li);
-});
+        <div class="hamburger">
+          <nav>
+            <input
+              id="button_image"
+              type="image"
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828846.png"
+              value="off"
+            />
+            <ul id="listoflinks"></ul>
+          </nav>
+        </div>
 
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value;
-  } else {
-    return number_value;
-  }
-}
+        <div class="modal hidden">
+          <img
+            class="larg_pic"
+            src="https://drive.google.com/uc?export=view&id=12035OP-LBfooY9EpLO7oVcJL6ty6XU59"
+            alt="My profile photo"
+          />
+        </div>
 
-document.getElementById("insert").addEventListener("click", (event) => {
-  let element_list = document.getElementById("list2");
-  let new_li = document.createElement("li");
-  new_li.innerText = getNumberOrString(document.getElementById("input").value);
+        <main>
+          <article>
+            <h1 class="head1">Iman kamrava</h1>
 
-  element_list.appendChild(new_li);
-});
+            <h1 class="head2">
+              Information Technology Support Technician<br />
+              London, England, United Kingdom
+            </h1>
 
-var value, item, links, http;
+            <nav id="main" aria-label="Main Site Links.">
+              <address class="email head2">
+                <a href="mailto:iman.kamrava@gmail.com">Contact me</a>
+              </address>
+            </nav>
 
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value;
-  } else {
-    return number_value;
-  }
-}
+            <h1 id="about" class="head2">About me</h1>
 
-value = getNumberOrString(document.getElementById("button_image").value);
-let element_button_image = document.getElementById("button_image");
-element_button_image.setAttribute("src", image_link);
-links = ["Google", "CYF", "Git hub"];
-http = [
-  "https://www.google.com/",
-  "https://codeyourfuture.io/",
-  "https://github.com/",
-];
+            <p class="article">
+              I have extensive experience in the IT sector over the last 15
+              years. I had some experience in software development in these
+              years but never take it seriously, it was like a hobby to me but
+              recently, I have decided to change my career and the first
+              fantastic program that I have found is
+              <a href="https://codeyourfuture.io/">Code Your Future</a> which I
+              enjoyed so far. I hope that I can change my life and job with
+              their program.<br />
+              On the other hand, one of my strengths is solving problems and I
+              am really good at it, as an IT support engineer, I really love
+              solving problems and I think, I can do it in codding as well
+            </p>
+          </article>
+        </main>
 
-document.getElementById("button_image").addEventListener("click", (event) => {
-  if (value == "off") {
-    links.forEach((item) => {
-      let element_listoflinks = document.getElementById("listoflinks");
-      let new_li = document.createElement("li");
-      let new_a = document.createElement("a");
-      new_a.innerText = item;
-      new_a.setAttribute("href", http.shift());
+        <div class="border">
+          <iframe
+            class="vid"
+            src="https://drive.google.com/uc?export=view&id=1qbzcPBo5N2c10yfQiv1MJa7HV-ffQ2LK"
+          >
+          </iframe>
+        </div>
+        <br />
 
-      new_li.appendChild(new_a);
+        <footer class="c-site-footer">
+          <lu id="list"></lu>
+          <div class="overlay hidden"></div>
+        </footer>
 
-      element_listoflinks.appendChild(new_li);
-    });
-    value = "on";
-    let element_button_image2 = document.getElementById("button_image");
-    element_button_image2.setAttribute("src", close_image);
-  } else {
-    let element_listoflinks2 = document.getElementById("listoflinks");
-    element_listoflinks2.innerText = "";
-    value = "off";
-    let element_button_image3 = document.getElementById("button_image");
-    element_button_image3.setAttribute("src", image_link);
-  }
-});
+        <textarea id="input"></textarea>
+        <button id="insert">Post</button>
+        <lu id="list2"></lu>
+      </body>
+    </html>
+
+    <!-- Your test console.
+Don't delete!-->
+    <aside
+      id="tests"
+      aria-label="Test Readout."
+      aria-live="polite"
+      style="overflow: auto"
+    ></aside>
+    <!-- partial -->
+    <script src="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js"></script>
+    <script src="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
