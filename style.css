@@ -283,6 +283,8 @@ body {
 .comment_name {
   background-color: #626e9c;
   padding-left: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .comment_list {
