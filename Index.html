@@ -43,8 +43,10 @@
               src="https://cdn-icons-png.flaticon.com/512/1828/1828846.png"
               value="off"
             />
-            <ul id="listoflinks"></ul>
           </nav>
+        </div>
+        <div>
+          <ul id="listoflinks"></ul>
         </div>
 
         <div class="modal hidden">
@@ -101,10 +103,18 @@
           <lu id="list"></lu>
           <div class="overlay hidden"></div>
         </footer>
-
-        <textarea id="input"></textarea>
-        <button id="insert">Post</button>
-        <lu id="list2"></lu>
+        <div class="comment_form">
+          <label>Name:</label><br>
+          <input id="c_name"></input><br><br>
+          <label>Comment:</label><br>
+          <textarea type="text" id="c_comment"></textarea><br>
+    
+          <button id="send">Send</button>
+          <lu id="lname">
+          </lu>
+        </div>
+          
+  
       </body>
     </html>
 
