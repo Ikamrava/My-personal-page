@@ -1,8 +1,8 @@
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const image_link = "https://cdn-icons-png.flaticon.com/512/1828/1828846.png";
-const close_image =
-  "https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-round-icon.png";
+//const close_image =
+ // "https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-round-icon.png";
 document
   .querySelector(".small_pic")
   .addEventListener("click", function (event) {
@@ -88,7 +88,7 @@ document.getElementById("button_image").addEventListener("click", (event) => {
     });
     value = "on";
     let element_button_image2 = document.getElementById("button_image");
-    element_button_image2.setAttribute("src", close_image);
+    element_button_image2.setAttribute("src", image_link);
   } else {
     let element_listoflinks2 = document.getElementById("listoflinks");
     element_listoflinks2.innerText = "";
