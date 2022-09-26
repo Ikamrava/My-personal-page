@@ -115,4 +115,13 @@ document.getElementById("send").addEventListener("click", (event) => {
   new_div.setAttribute("class", "c_span");
 
   element_lname.appendChild(new_div);
+  
+  if (typeof(Storage) !== "undefined") {
+  localStorage.setItem("lastname", "Smith");
+  alert("Stored");
+} else {
+ alert("Sorry! No Web Storage support..");
+}
+
 });
+
