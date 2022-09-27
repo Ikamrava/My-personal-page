@@ -9,21 +9,8 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- partial:index.partial.html -->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>My first home page</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </head>
 
       <body>
-        <header class="c-site-header"></header>
-
         <div class="container">
           <div class="c1">
             <img
@@ -32,7 +19,7 @@
               alt="My profile photo"
             />
           </div>
-          <div class="c2">Welcome to my pag</div>
+          <div class="c2">Welcome to my Page</div>
         </div>
 
         <div class="hamburger">
@@ -49,32 +36,70 @@
           <ul id="listoflinks"></ul>
         </div>
 
-        <div class="modal hidden">
-          <img
-            class="larg_pic"
-            src="https://drive.google.com/uc?export=view&id=12035OP-LBfooY9EpLO7oVcJL6ty6XU59"
-            alt="My profile photo"
-          />
-        </div>
-
         <main>
           <article>
             <h1 class="head1">Iman kamrava</h1>
 
             <h1 class="head2">
-              Information Technology Support Technician<br />
+              Front End Developer Trainee<br />
               London, England, United Kingdom
             </h1>
+          </article>
 
-            <nav id="main" aria-label="Main Site Links.">
-              <address class="email head2">
-                <a href="mailto:iman.kamrava@gmail.com">Contact me</a>
-              </address>
-            </nav>
 
-            <h1 id="about" class="head2">About me</h1>
 
-            <p class="article">
+          <div class = "flexcontainer2" >
+
+            <div class="pic1">
+              
+              <img
+              class="all_pic"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+              alt="My profile photo"
+            />
+            
+            </div>
+            <div class= "box1">
+              <h3 class = "html_text">HTML</h3>
+            </div>
+
+            <div class="pic2">
+              <img
+              class="all_pic"
+              src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
+              alt="My profile photo"
+            />
+            </div>
+            <div class= "box2">
+              <h3>CSS</h3>
+            </div>
+            
+            <div class="pic3 ">
+              <img
+              class="all_pic"
+              src="https://play-lh.googleusercontent.com/IHMe-gJ6G4rf5-TVlDZOtcW-3EDBwJ4p2qomk86O6qkjjutl5ePczGmyqCDOvhGJ1w"
+
+              alt="My profile photo"
+            />
+            </div>
+            <div class= "box3">
+              <h3>Java Script</h3>
+            </div>
+          </div><br>
+        </main>
+        
+       
+        <div class = "flexcontainer">
+
+          <div>
+            <img
+            class="modal flex_pic hidden"
+            src="https://drive.google.com/uc?export=view&id=12035OP-LBfooY9EpLO7oVcJL6ty6XU59"
+            alt="My profile photo"/>
+          </div>
+
+          <div>
+            <p class="modal2 hidden about_me">
               I have extensive experience in the IT sector over the last 15
               years. I had some experience in software development in these
               years but never take it seriously, it was like a hobby to me but
@@ -87,20 +112,33 @@
               am really good at it, as an IT support engineer, I really love
               solving problems and I think, I can do it in codding as well
             </p>
-          </article>
-        </main>
+          </div>
+
+        </div>
+          
+        </body>
+        
 
         <div class="border">
-          <iframe
+          <iframe width="640" height="420"
             class="vid"
-            src="https://drive.google.com/uc?export=view&id=1qbzcPBo5N2c10yfQiv1MJa7HV-ffQ2LK"
-          >
+            src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=JJSoEo8JSnc">
           </iframe>
         </div>
-        <br />
+        <br/>
 
-        <footer class="c-site-footer">
-          <lu id="list"></lu>
+        <footer >
+          
+          
+          <div class="container2">
+            <div class="f1"><a href = "mailto: kamrava.iman@outlook.com">Contact me</a></div>
+            <div class="f2"><a href="#vid">Video</a></div>
+            <div class="f3"><a href="https://codeyourfuture.io/">Code Your Future</a></div>
+            <div class="f4"><a href="#about">About me</a></div>
+            <div class="f5"><a href="https://www.freecodecamp.org/">Free Code Camp</a></div>
+            <div class="f6"><a href="https://codepen.io/">Codepen</a></div>
+          </div>
+
           <div class="overlay hidden"></div>
         </footer>
         <div class="comment_form">
@@ -118,17 +156,6 @@
       </body>
     </html>
 
-    <!-- Your test console.
-Don't delete!-->
-    <aside
-      id="tests"
-      aria-label="Test Readout."
-      aria-live="polite"
-      style="overflow: auto"
-    ></aside>
-    <!-- partial -->
-    <script src="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js"></script>
-    <script src="https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js"></script>
-    <script src="./script.js"></script>
+       <script src="./script.js"></script>
   </body>
 </html>
