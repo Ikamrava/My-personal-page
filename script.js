@@ -118,7 +118,7 @@ document.getElementById("send").addEventListener("click", (event) => {
   
   if (typeof(Storage) !== "undefined") {
   localStorage.setItem("lastname", "Smith");
-  alert("Stored");
+  alert("Your comment has been sent");
 } else {
  alert("Sorry! No Web Storage support..");
 }
