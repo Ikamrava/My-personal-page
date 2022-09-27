@@ -1,36 +1,27 @@
 const modal = document.querySelector(".modal");
+const modal2 = document.querySelector(".modal2");
 const overlay = document.querySelector(".overlay");
 const image_link = "https://cdn-icons-png.flaticon.com/512/1828/1828846.png";
-//const close_image =
-// "https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-round-icon.png";
+const aboutme = document.querySelector(".f4");
+
 document
   .querySelector(".small_pic")
   .addEventListener("click", function (event) {
-    document.querySelector(".modal").classList.remove("hidden");
-    document.querySelector(".overlay").classList.remove("hidden");
+    modal.classList.remove("hidden");
+    modal2.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   });
+
 overlay.addEventListener("click", function () {
-  document.querySelector(".modal").classList.add("hidden");
-  document.querySelector(".overlay").classList.add("hidden");
+  modal.classList.add("hidden");
+  modal2.classList.add("hidden");
+  overlay.classList.add("hidden");
 });
 
-var dns, link, item;
-dns = ["Code your future", "Google", "Git hub"];
-link = [
-  "https://codeyourfuture.io/",
-  "https://www.google.com/",
-  "https://github.com/",
-];
-dns.forEach((item) => {
-  let element_list = document.getElementById("list");
-  let new_li = document.createElement("li");
-  let new_a = document.createElement("a");
-  new_a.innerText = item;
-  new_a.setAttribute("href", link.shift());
-
-  new_li.appendChild(new_a);
-
-  element_list.appendChild(new_li);
+aboutme.addEventListener("click", function () {
+  modal.classList.remove("hidden");
+  modal2.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 });
 
 function getNumberOrString(value) {
@@ -115,13 +106,11 @@ document.getElementById("send").addEventListener("click", (event) => {
   new_div.setAttribute("class", "c_span");
 
   element_lname.appendChild(new_div);
-  
-  if (typeof(Storage) !== "undefined") {
-  localStorage.setItem("lastname", "Smith");
-  alert("Your comment has been sent");
-} else {
- alert("Sorry! No Web Storage support..");
-}
 
+  if (typeof Storage !== "undefined") {
+    localStorage.local_name = document.getElementById("c_name").value;
+    localStorage.local_comment = document.getElementById("c_comment").value;
+  } else {
+    alert("Sorry! No Web Storage support..");
+  }
 });
-
