@@ -114,25 +114,6 @@ body {
   font-weight: bold;
 }
 
-.f1 {
-  flex: 1;
-}
-.f2 {
-  flex: 1;
-}
-.f3 {
-  flex: 1;
-}
-.f4 {
-  flex: 1;
-}
-.f5 {
-  flex: 1;
-}
-.f6 {
-  flex: 1;
-}
-
 .hidden {
   position: absolute;
   float: center;
@@ -211,10 +192,15 @@ body {
   background-color: #dde6de;
   border-radius: 20px;
   padding: 20px;
+  font-size: 10pt;
+  font-weight: bold;
 }
 #c_comment {
   width: 200px;
   height: 80px;
+}
+#c_name {
+  width: 200px;
 }
 #lname {
   list-style-type: none;
@@ -298,12 +284,11 @@ body {
   background: #dde6de;
   border-radius: 25px;
   padding: 5px;
-  text-align: left;
-  font-size: 50pt;
 }
 
 .flexcontainer2 div {
   padding-top: 5px;
+  border: 2px sold white;
 }
 
 .all_pic {
@@ -311,24 +296,24 @@ body {
 }
 .pic1 {
   flex: 1;
+  text-align: right;
 }
 .pic2 {
   flex: 1;
+  text-align: right;
 }
 .pic3 {
   flex: 1;
+  text-align: right;
 }
 .box1 {
-  flex: 5;
+  flex: 1;
 }
 .box2 {
-  flex: 5;
+  flex: 1;
 }
 .box3 {
-  flex: 5;
-}
-h3 {
-  font-size: 15pt;
+  flex: 1.4;
 }
 
 .container2 {
@@ -340,16 +325,45 @@ h3 {
   box-shadow: 2px 2px #888888;
   background: #dde6de;
   border-radius: 25px;
-  padding: 10px;
+  padding: 5px;
   align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .container2 div {
   font-size: 14pt;
+  padding: 2px;
 }
+
 .top_menu_photo {
   width: 30px;
+}
+.contact_me {
+  flex: 2;
+}
+
+.f1 {
+  flex: 1;
+  text-align: right;
+}
+.f2 {
+  flex: 1;
+  text-align: right;
+}
+.f3 {
+  flex: 1;
+  text-align: right;
+}
+.f4 {
+  flex: 1;
+  text-align: right;
+}
+.f5 {
+  flex: 1;
+  text-align: right;
+}
+.f6 {
+  flex: 1;
+  text-align: right;
 }
 
 .flexcontainer3 {
@@ -360,6 +374,8 @@ h3 {
   background: #dde6de;
   border-radius: 20px;
   padding: 10px;
+  align-items: center;
+  text-align: center;
 }
 
 .border {
@@ -389,11 +405,9 @@ h3 {
   color: #626e9c;
   font-weight: bold;
 }
-
 iframe {
   border-radius: 20px;
 }
-
 @media only screen and (max-width: 550px) {
   .c2 {
     font-size: 10px;
@@ -442,9 +456,23 @@ iframe {
     top: 185px;
   }
   .top_menu_photo {
-    width: 20px;
+    width: 8px;
   }
   .container2 div {
+    font-size: 6pt;
+  }
+
+  .all_pic {
+    width: 20px;
+  }
+  h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 8pt;
+    color: #ce5937;
+    font-weight: bold;
+  }
+
+  .container2 {
+    padding: 3px;
   }
 }
