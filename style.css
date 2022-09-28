@@ -386,6 +386,7 @@ h3 {
 }
 .lu_text {
   color: #626e9c;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 520px) {
