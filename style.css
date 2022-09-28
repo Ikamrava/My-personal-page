@@ -133,29 +133,6 @@ body {
   flex: 1;
 }
 
-@media screen and (max-width: 420px) {
-  .c2 {
-    font-size: 10px;
-    border-radius: 15px;
-    height: 20px;
-    text-align: left;
-    justify-self: center;
-  }
-
-  .article {
-    font-size: 12px;
-  }
-  .hamburger {
-    position: absolute;
-    right: 20px;
-    padding-top: 20px;
-  }
-
-  #button_image {
-    width: 10px;
-  }
-}
-
 .hidden {
   position: absolute;
   float: center;
@@ -322,6 +299,7 @@ body {
   border-radius: 25px;
   padding: 5px;
   text-align: left;
+  font-size: 50pt;
 }
 
 .flexcontainer2 div {
@@ -366,7 +344,9 @@ h3 {
   align-items: center;
   text-align: center;
 }
-
+.container2 div {
+  font-size: 14pt;
+}
 .top_menu_photo {
   width: 30px;
 }
@@ -374,9 +354,7 @@ h3 {
 .flexcontainer3 {
   display: flex;
   flex-direction: row;
-  font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
   border: solid #181514;
   background: #dde6de;
   border-radius: 20px;
@@ -401,9 +379,66 @@ li {
   color: #000;
 }
 h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15pt;
   color: #ce5937;
+  font-weight: bold;
 }
 .lu_text {
   color: #626e9c;
+}
+
+@media only screen and (max-width: 520px) {
+  .c2 {
+    font-size: 10px;
+    border-radius: 15px;
+    height: 20px;
+    text-align: left;
+    justify-self: center;
+  }
+
+  .article {
+    font-size: 12px;
+  }
+  .hamburger {
+    position: absolute;
+    right: 30px;
+    padding-top: 20px;
+  }
+
+  #button_image {
+    width: 30px;
+  }
+  iframe {
+    width: 160px;
+    height: 160px;
+  }
+
+  li {
+    font-size: 8pt;
+    color: #000;
+  }
+  lu {
+    font-size: 10pt;
+  }
+
+  #listoflinks {
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    list-style-type: none;
+    right: 30px;
+    padding: 0;
+    top: 185px;
+  }
+  .top_menu_photo {
+    width: 20px;
+  }
+  .container2 div {
+    font-size: 8pt;
+  }
 }
