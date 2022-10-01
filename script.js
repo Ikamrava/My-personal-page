@@ -3,6 +3,9 @@ const modal2 = document.querySelector(".modal2");
 const overlay = document.querySelector(".overlay");
 const image_link = "https://cdn-icons-png.flaticon.com/512/1828/1828846.png";
 const aboutme = document.querySelector(".f4");
+const main_image = document.querySelector(".main_image");
+const back_button = document.querySelector("back_button");
+const next_button = document.querySelector("next_button");
 
 document
   .querySelector(".small_pic")
@@ -35,6 +38,7 @@ function getNumberOrString(value) {
 }
 
 var value2, item, links, http;
+var img_links = ["./images/first.png", "./images/secound.png"];
 
 function getNumberOrString(value2) {
   // Convert a string value to a number if possible
@@ -113,4 +117,20 @@ document.getElementById("send").addEventListener("click", (event) => {
   } else {
     alert("Sorry! No Web Storage support..");
   }
+});
+
+document.getElementById("next").addEventListener("click", (event) => {
+  img_links.push(img_links.shift());
+  let element_main_image = document.getElementById("text_image");
+  element_main_image.setAttribute("src", img_links[0]);
+  document.getElementById("back").classList.remove("hidden");
+  document.getElementById("next").classList.add("hidden");
+});
+
+document.getElementById("back").addEventListener("click", (event) => {
+  img_links.unshift(img_links.pop());
+  let element_main_image = document.getElementById("text_image");
+  element_main_image.setAttribute("src", img_links[0]);
+  document.getElementById("back").classList.add("hidden");
+  document.getElementById("next").classList.remove("hidden");
 });
