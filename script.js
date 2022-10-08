@@ -137,6 +137,8 @@ function btnHide(array) {
   }
   if (currentIndex == array.length - 1) {
     btnNext.classList.add("hidden");
+  }else{
+    btnNext.classList.remove("hidden");
   }
 }
 
