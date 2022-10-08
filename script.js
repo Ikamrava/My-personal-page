@@ -2,10 +2,11 @@ const modal = document.querySelector(".modal");
 const modal2 = document.querySelector(".modal2");
 const overlay = document.querySelector(".overlay");
 const image_link = "https://cdn-icons-png.flaticon.com/512/1828/1828846.png";
-const aboutme = document.querySelector(".f4");
+const about_me = document.querySelector(".about_me");
 const main_image = document.querySelector(".main_image");
 const btnBack = document.getElementById("back");
 const btnNext = document.getElementById("next");
+const about_meTxt = document.getElementById("f4_text");
 
 document
   .querySelector(".small_pic")
@@ -21,7 +22,15 @@ overlay.addEventListener("click", function () {
   overlay.classList.add("hidden");
 });
 
-aboutme.addEventListener("click", function () {
+about_me.addEventListener("click", function () {
+
+  modal.classList.remove("hidden");
+  modal2.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+
+about_meTxt.addEventListener("click", function () {
+  
   modal.classList.remove("hidden");
   modal2.classList.remove("hidden");
   overlay.classList.remove("hidden");

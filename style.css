@@ -423,9 +423,7 @@ iframe {
   margin-right: 100px;
 }
 
-.flex-buttons div{
-  width: 50px;
-}
+
 
 @media only screen and (max-width: 550px) {
   .c2 {
@@ -486,7 +484,7 @@ iframe {
     width: 20px;
   }
 
-  #back{
+  #images{
     width: 50%;
   }
   #next{
