@@ -423,7 +423,9 @@ iframe {
   margin-right: 100px;
 }
 
-
+#main-images{
+  width: 100px;
+}
 
 @media only screen and (max-width: 550px) {
   .c2 {
