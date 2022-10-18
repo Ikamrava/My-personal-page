@@ -23,14 +23,12 @@ overlay.addEventListener("click", function () {
 });
 
 about_me.addEventListener("click", function () {
-
   modal.classList.remove("hidden");
   modal2.classList.remove("hidden");
   overlay.classList.remove("hidden");
 });
 
 about_meTxt.addEventListener("click", function () {
-  
   modal.classList.remove("hidden");
   modal2.classList.remove("hidden");
   overlay.classList.remove("hidden");
@@ -120,11 +118,21 @@ document.getElementById("send").addEventListener("click", (event) => {
   element_lname.appendChild(new_div);
 
   if (typeof Storage !== "undefined") {
-    localStorage.local_name = document.getElementById("c_name").value;
-    localStorage.local_comment = document.getElementById("c_comment").value;
+    dName = document.getElementById("c_name").value;
+    dComment = document.getElementById("c_comment").value;
   } else {
     alert("Sorry! No Web Storage support..");
   }
+  const data = { dName, dComment };
+  const option = {
+    headers: {
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+    body: JSON.stringify(data),
+  };
+
+  fetch("./api", option);
 });
 
 var currentIndex = 0;
@@ -146,7 +154,7 @@ function btnHide(array) {
   }
   if (currentIndex == array.length - 1) {
     btnNext.classList.add("hidden");
-  }else{
+  } else {
     btnNext.classList.remove("hidden");
   }
 }
