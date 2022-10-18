@@ -103,6 +103,7 @@ function getNumberOrString(value) {
 }
 
 document.getElementById("send").addEventListener("click", (event) => {
+  event.preventDefault();
   let element_lname = document.getElementById("lname");
   let new_li = document.createElement("li");
   new_li.innerText = getNumberOrString(document.getElementById("c_name").value);
@@ -117,22 +118,22 @@ document.getElementById("send").addEventListener("click", (event) => {
 
   element_lname.appendChild(new_div);
 
-  if (typeof Storage !== "undefined") {
-    dName = document.getElementById("c_name").value;
-    dComment = document.getElementById("c_comment").value;
-  } else {
-    alert("Sorry! No Web Storage support..");
-  }
+  dName = document.getElementById("c_name").value;
+  dComment = document.getElementById("c_comment").value;
+
   const data = { dName, dComment };
+
   const option = {
+    body: JSON.stringify(data),
     headers: {
       "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
     },
+    mode: "cors",
     method: "POST",
-    body: JSON.stringify(data),
   };
 
-  fetch("./api", option);
+  fetch("http://localhost:3000", option);
 });
 
 var currentIndex = 0;
