@@ -1,35 +1,3 @@
-          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-          // import "firebase/database";
-          // TODO: Add SDKs for Firebase products that you want to use
-          // https://firebase.google.com/docs/web/setup#available-libraries
-
-          // Your web app's Firebase configuration
-          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-          const firebaseConfig = {
-            apiKey: "AIzaSyC29hjAaM_pRZHfD1e1LliS_r13Fyj0SOQ",
-            authDomain: "my-first-projects-74a37.firebaseapp.com",
-            databaseURL: "https://my-first-projects-74a37-default-rtdb.firebaseio.com",
-            projectId: "my-first-projects-74a37",
-            storageBucket: "my-first-projects-74a37.appspot.com",
-            messagingSenderId: "532752384419",
-            appId: "1:532752384419:web:a7ce1a4e53ae34d67b9a16",
-            measurementId: "G-Q33HE4ERY7",
-            databaseURL:"https://my-first-projects-74a37-default-rtdb.firebaseio.com"
-          };
-
-          // Initialize Firebase
-          const app = initializeApp(firebaseConfig);
-          // const database = firebase.database();
-
-// function writeUserData(userId, name, email) {
-//   database.ref('users/' + userId).set({
-//     username: name,
-//     email: email
-//   });
-// }
-// writeUserData("iman","ikam","kam@",)
-
-
 const modal = document.querySelector(".modal");
 const modal2 = document.querySelector(".modal2");
 const overlay = document.querySelector(".overlay");
@@ -193,4 +161,3 @@ btnBack.addEventListener("click", (event) => {
   btnHide(img_links);
 });
 
-console.log(firebase)
