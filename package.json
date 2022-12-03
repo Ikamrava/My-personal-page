@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "firebase": "^9.14.0"
-  }
+  },
+  "name": "my-personal-page",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikamrava/My-personal-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ikamrava/My-personal-page/issues"
+  },
+  "homepage": "https://github.com/Ikamrava/My-personal-page#readme",
+  "description": ""
 }
